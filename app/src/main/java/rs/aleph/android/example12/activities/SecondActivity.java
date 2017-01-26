@@ -1,7 +1,10 @@
 package rs.aleph.android.example12.activities;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.view.View;
 import android.widget.Toast;
 
 import rs.aleph.android.example12.R;
@@ -79,5 +82,19 @@ public class SecondActivity extends Activity {
 
         Toast toast = Toast.makeText(getBaseContext(), "Activity.onDestroy()", Toast.LENGTH_SHORT);
         toast.show();
+    }
+
+    public void btnStartActivityClicked(View view) {
+        // This is an explicit intent (class property is specified)
+        Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+        // startActivity method starts an activity
+        startActivity(intent);
+    }
+
+    public void btnOpenCameraClicked(View view) {
+
+        Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+
+        startActivity(i);
     }
 }

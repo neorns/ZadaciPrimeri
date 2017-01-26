@@ -5,12 +5,17 @@
 
     <!-- Declares that the app needs a permission to access internet -->
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
         android:allowBackup="true"
         android:label="@string/app_name"
         android:theme="@style/Theme.AppCompat.Light">
 
+        <activity
+            android:name="rs.aleph.android.example12.activities.ThirdActivity"
+            android:label="@string/app_name">
+        </activity>
         <!-- Declares 2nd activity -->
         <activity
             android:name="rs.aleph.android.example12.activities.SecondActivity"
