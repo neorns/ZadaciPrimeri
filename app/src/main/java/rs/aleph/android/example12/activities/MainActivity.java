@@ -78,7 +78,8 @@ public class MainActivity extends Activity {
 	// Called when btnOpen is clicked
     public void btnOpenBrowserClicked(View view) {
 		// This is an implicit intent
-        Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+        //Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+		Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(String.valueOf(R.string.www_google_com)));
 		// startActivity method starts an activity
 		startActivity(i);
     }

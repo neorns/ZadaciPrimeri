@@ -22,7 +22,8 @@ public class SecondActivity extends Activity {
         setContentView(R.layout.activity_second);
 
         // Shows a toast message (a pop-up message)
-        Toast toast = Toast.makeText(getBaseContext(), "Activity.onCreate()", Toast.LENGTH_SHORT);
+        //Toast toast = Toast.makeText(getBaseContext(), "Activity.onCreate()", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(getBaseContext(), R.string.activity_oncreate, Toast.LENGTH_SHORT);
         toast.show();
     }
 
@@ -32,7 +33,7 @@ public class SecondActivity extends Activity {
     protected void onStart() {
         super.onStart();
 
-        Toast toast = Toast.makeText(getBaseContext(), "Activity.onStart()", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(getBaseContext(), R.string.activity_onstart, Toast.LENGTH_SHORT);
         toast.show();
     }
 
@@ -42,7 +43,7 @@ public class SecondActivity extends Activity {
     protected void onRestart() {
         super.onRestart();
 
-        Toast toast = Toast.makeText(getBaseContext(), "Activity.onRestart()", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(getBaseContext(), R.string.activity_onrestart, Toast.LENGTH_SHORT);
         toast.show();
     }
 
@@ -52,7 +53,7 @@ public class SecondActivity extends Activity {
     protected void onResume() {
         super.onResume();
 
-        Toast toast = Toast.makeText(getBaseContext(), "Activity.onResume()", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(getBaseContext(), R.string.activity_onresume, Toast.LENGTH_SHORT);
         toast.show();
     }
 
@@ -62,7 +63,7 @@ public class SecondActivity extends Activity {
     protected void onPause() {
         super.onPause();
 
-        Toast toast = Toast.makeText(getBaseContext(), "Activity.onPause()", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(getBaseContext(), R.string.activity_onpause, Toast.LENGTH_SHORT);
         toast.show();
     }
 
@@ -71,7 +72,7 @@ public class SecondActivity extends Activity {
     protected void onStop() {
         super.onStop();
 
-        Toast toast = Toast.makeText(getBaseContext(), "Activity.onStop()", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(getBaseContext(), R.string.activity_onstop, Toast.LENGTH_SHORT);
         toast.show();
     }
 
@@ -80,7 +81,7 @@ public class SecondActivity extends Activity {
     protected void onDestroy() {
         super.onDestroy();
 
-        Toast toast = Toast.makeText(getBaseContext(), "Activity.onDestroy()", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(getBaseContext(), R.string.activity_ondestroy, Toast.LENGTH_SHORT);
         toast.show();
     }
 

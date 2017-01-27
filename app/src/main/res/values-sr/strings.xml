@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">iReviewer</string>
 
-    <string name="start_activity">Start an Activity</string>
-    <string name="open_browser">Open Web Browser</string>
+    <string name="start_activity">Pokreni aktivnost</string>
+    <string name="open_browser">Otvori veb brauzer</string>
     <string name="www_google_com">http://www.google.com</string>
     <string name="activity_oncreate">Activity.onCreate()</string>
     <string name="activity_onstart">Activity.onStart()</string>
@@ -11,5 +11,5 @@
     <string name="activity_onpause">Activity.onPause()</string>
     <string name="activity_onstop">Activity.onStop()</string>
     <string name="activity_ondestroy">Activity.onDestroy()</string>
-    <string name="open_camera">Open Camera</string>
+    <string name="open_camera">Otvori kameru</string>
 </resources>
