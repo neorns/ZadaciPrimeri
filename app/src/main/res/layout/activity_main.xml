@@ -9,7 +9,9 @@
         android:layout_height="wrap_content"
         android:text="@string/start_activity"
         android:id="@+id/start_activity"
-        android:onClick="btnStartActivityClicked"/>
+        android:onClick="btnStartActivityClicked"
+        android:drawableLeft="@drawable/ic_start_activity_2"
+        />
 
     <!-- Declares a button that opens a browser -->
     <Button
@@ -17,6 +19,8 @@
         android:layout_height="wrap_content"
         android:text="@string/open_browser"
         android:id="@+id/open_browser"
-        android:onClick="btnOpenBrowserClicked"/>
+        android:onClick="btnOpenBrowserClicked"
+        android:drawableLeft="@drawable/ic_open_browser"
+        />
     
 </LinearLayout>
