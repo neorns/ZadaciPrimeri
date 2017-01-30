@@ -12,10 +12,7 @@
         android:label="@string/app_name"
         android:theme="@style/Theme.AppCompat.Light">
 
-        <activity
-            android:name="rs.aleph.android.example12.activities.ThirdActivity"
-            android:label="@string/app_name">
-        </activity>
+
         <!-- Declares 2nd activity -->
         <activity
             android:name="rs.aleph.android.example12.activities.SecondActivity"
