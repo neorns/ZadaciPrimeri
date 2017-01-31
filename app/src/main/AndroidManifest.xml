@@ -22,7 +22,7 @@
         <!-- Declares 1st (main) activity. Action "MAIN" and category "LAUNCHER" properties
         makes it visible in the application launcher -->
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.FirstActivity"
             android:icon="@mipmap/ic_launcher">
             android:label="@string/app_name">
             <intent-filter>

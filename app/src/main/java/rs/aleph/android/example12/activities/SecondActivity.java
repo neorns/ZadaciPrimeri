@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Locale;
 
 import rs.aleph.android.example12.R;
 
@@ -59,10 +60,10 @@ public class SecondActivity extends Activity {
         tvSastojci.setText(jelo.getSastojci());
 
         TextView tvKalorije = (TextView) findViewById(R.id.tv_kalorije);
-        tvKalorije.setText(Integer.toString(jelo.getKalorije()));
+        tvKalorije.setText(String.format(Locale.getDefault(),getString(R.string.jelo_calories),jelo.getKalorije()));
 
         TextView tvCena = (TextView) findViewById(R.id.tv_cena);
-        tvCena.setText(Float.toString(jelo.getCena()));
+        tvCena.setText(String.format(Locale.getDefault(), getString(R.string.jelo_price),jelo.getCena()));
 
 
     }

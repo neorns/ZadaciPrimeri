@@ -12,4 +12,6 @@
     <string name="activity_onstop">Activity.onStop()</string>
     <string name="activity_ondestroy">Activity.onDestroy()</string>
     <string name="open_camera">Open Camera</string>
+    <string name="jelo_calories">%d calories</string>
+    <string name="jelo_price">%.2f RSD</string>
 </resources>
