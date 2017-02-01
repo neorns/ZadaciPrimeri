@@ -1,4 +1,8 @@
-package rs.aleph.android.example12.activities;
+package rs.aleph.android.example12.activities.model;
+
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by androiddevelopment on 30.1.17..
@@ -10,14 +14,20 @@ public class Jelo {
     private int id;
     private String slika;
     private String naziv;
-    private  String opis;
-    private String kategorija;
-    private String sastojci;
-    private int kalorije;
-    private float cena;
+    private String opis;
+    private Kategorija kategorija;
+
+    private List<Sastojak> sastojci;
+
+    private double kalorije;
+    private BigDecimal cena;
 
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getSlika() {
@@ -44,47 +54,48 @@ public class Jelo {
         this.opis = opis;
     }
 
-    public String getKategorija() {
+    public Kategorija getKategorija() {
         return kategorija;
     }
 
-    public void setKategorija(String kategorija) {
+    public void setKategorija(Kategorija kategorija) {
         this.kategorija = kategorija;
     }
 
-    public String getSastojci() {
+    public List<Sastojak> getSastojci() {
         return sastojci;
     }
 
-    public void setSastojci(String sastojci) {
+    public void setSastojci(List<Sastojak> sastojci) {
         this.sastojci = sastojci;
     }
 
-    public int getKalorije() {
+    public double getKalorije() {
         return kalorije;
     }
 
-    public void setKalorije(int kalorije) {
+    public void setKalorije(double kalorije) {
         this.kalorije = kalorije;
     }
 
-    public float getCena() {
+    public BigDecimal getCena() {
         return cena;
     }
 
-    public void setCena(float cena) {
+    public void setCena(BigDecimal cena) {
         this.cena = cena;
     }
 
     public Jelo() {
     }
 
-    public Jelo(String slika, String naziv, String opis, String kategorija, String sastojci, int kalorije, float cena) {
+    public Jelo(int id, String slika, String naziv, String opis, Kategorija kategorija, double kalorije, BigDecimal cena) {
+        this.id = id;
         this.slika = slika;
         this.naziv = naziv;
         this.opis = opis;
         this.kategorija = kategorija;
-        this.sastojci = sastojci;
+        this.sastojci = new ArrayList<>();
         this.kalorije = kalorije;
         this.cena = cena;
     }

@@ -1,12 +1,18 @@
-package rs.aleph.android.example12.activities;
+package rs.aleph.android.example12.activities.activities;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.List;
 
 import rs.aleph.android.example12.R;
+import rs.aleph.android.example12.activities.provider.JeloProvider;
 
 // Each activity extends Activity class
 public class FirstActivity extends Activity {
@@ -19,6 +25,21 @@ public class FirstActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		// setContentView method draws UI
 		setContentView(R.layout.activity_first);
+
+		final List<String> jelaNazivi = JeloProvider.getJelaNazivi();
+		ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, R.layout.list_item, jelaNazivi);
+		ListView listView = (ListView) findViewById(R.id.listJela);
+
+		listView.setAdapter(dataAdapter);
+
+		listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+				Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+				intent.putExtra("position", position);
+				startActivity(intent);
+			}
+		});
+
 	}
 
 	// onStart method is a lifecycle method called after onCreate (or after onRestart when the

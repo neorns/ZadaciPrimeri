@@ -19,15 +19,17 @@
         android:id="@+id/tv_opis"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-    <TextView
-        android:id="@+id/tv_kategorija"
+
+    <Spinner
+        android:id="@+id/sp_kategorija"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/tv_sastojci"
+
+    <ListView
+        android:id="@+id/list_sastojci"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"/>
 
     <TextView
         android:id="@+id/tv_kalorije"

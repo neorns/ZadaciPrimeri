@@ -22,5 +22,10 @@
         android:onClick="btnOpenBrowserClicked"
         android:drawableLeft="@drawable/ic_open_browser"
         />
+
+    <ListView
+        android:id="@+id/listJela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
     
 </LinearLayout>
