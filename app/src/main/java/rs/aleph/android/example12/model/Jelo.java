@@ -1,4 +1,4 @@
-package rs.aleph.android.example12.activities.model;
+package rs.aleph.android.example12.model;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

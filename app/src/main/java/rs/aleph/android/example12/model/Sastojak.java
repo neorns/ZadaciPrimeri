@@ -1,4 +1,4 @@
-package rs.aleph.android.example12.activities.model;
+package rs.aleph.android.example12.model;
 
 /**
  * Created by androiddevelopment on 1.2.17..

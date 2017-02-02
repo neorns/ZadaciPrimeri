@@ -1,4 +1,4 @@
-package rs.aleph.android.example12.activities.activities;
+package rs.aleph.android.example12.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,7 +12,7 @@ import android.widget.ListView;
 import java.util.List;
 
 import rs.aleph.android.example12.R;
-import rs.aleph.android.example12.activities.provider.JeloProvider;
+import rs.aleph.android.example12.provider.JeloProvider;
 
 // Each activity extends Activity class
 public class FirstActivity extends Activity {

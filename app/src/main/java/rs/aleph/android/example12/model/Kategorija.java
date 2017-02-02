@@ -1,4 +1,4 @@
-package rs.aleph.android.example12.activities.model;
+package rs.aleph.android.example12.model;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,9 +1,9 @@
-package rs.aleph.android.example12.activities.provider;
+package rs.aleph.android.example12.provider;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import rs.aleph.android.example12.activities.model.Kategorija;
+import rs.aleph.android.example12.model.Kategorija;
 
 /**
  * Created by androiddevelopment on 1.2.17..

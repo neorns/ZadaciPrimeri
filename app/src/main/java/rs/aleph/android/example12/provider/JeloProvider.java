@@ -1,12 +1,12 @@
-package rs.aleph.android.example12.activities.provider;
+package rs.aleph.android.example12.provider;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-import rs.aleph.android.example12.activities.model.Jelo;
-import rs.aleph.android.example12.activities.model.Kategorija;
-import rs.aleph.android.example12.activities.model.Sastojak;
+import rs.aleph.android.example12.model.Jelo;
+import rs.aleph.android.example12.model.Kategorija;
+import rs.aleph.android.example12.model.Sastojak;
 
 /**
  * Created by androiddevelopment on 1.2.17..
