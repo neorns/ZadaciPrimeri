@@ -34,18 +34,28 @@ public class JeloProvider {
                 rezultat = new Jelo(0, "bananas.jpg", "Jelo 1", "Opis 1", k1, 100, BigDecimal.valueOf(1000));
                 rezultat.getSastojci().add(new Sastojak(0, "Sastojak 1 za jelo 1", rezultat));
                 rezultat.getSastojci().add(new Sastojak(1, "Sastojak 2 za jelo 1", rezultat));
+                break;
             }
             case 1: {
                 rezultat = new Jelo(1, "bananas.jpg", "Jelo 2", "Opis 2", k2, 200, BigDecimal.valueOf(2000));
+
                 rezultat.getSastojci().add(new Sastojak(0, "Sastojak 1 za jelo 2", rezultat));
                 rezultat.getSastojci().add(new Sastojak(1, "Sastojak 2 za jelo 2", rezultat));
+
+                break;
             }
-            case 2:
-                rezultat = new Jelo(2,"bananas.jpg","Jelo 3","Opis 3",k2,300.30, BigDecimal.valueOf(3000));
-            case 3:
-                rezultat = new Jelo(3,"bananas.jpg","Jelo 4","Opis 4",k2,400, BigDecimal.valueOf(4000));
-            case 4:
-                rezultat = new Jelo(4,"bananas.jpg","Jelo 5","Opis 5",k2,500.50, BigDecimal.valueOf(5000));
+            case 2: {
+                rezultat = new Jelo(2, "bananas.jpg", "Jelo 3", "Opis 3", k2, 300.30, BigDecimal.valueOf(3000));
+                break;
+            }
+            case 3: {
+                rezultat = new Jelo(3, "bananas.jpg", "Jelo 4", "Opis 4", k2, 400, BigDecimal.valueOf(4000));
+                break;
+            }
+            case 4: {
+                rezultat = new Jelo(4, "bananas.jpg", "Jelo 5", "Opis 5", k2, 500.50, BigDecimal.valueOf(5000));
+                break;
+            }
             default:
                 rezultat = null;
         }
