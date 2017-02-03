@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16sp"
+    android:paddingRight="16sp"
+    >
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="8sp"
+        />
+    <TextView
+        android:id="@+id/tv_naziv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_image"
+        android:paddingLeft="8sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_opis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_image"
+        android:layout_below="@+id/tv_naziv"
+        android:paddingLeft="8sp"
+        />
+    <Spinner
+        android:id="@+id/sp_kategorija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_image"
+        android:layout_below="@+id/tv_opis"
+        />
+
+
+
+    <ListView
+        android:id="@+id/list_sastojci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_image"
+        android:layout_alignParentLeft="true"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="8sp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/list_sastojci"
+        >
+        <TextView
+            android:id="@+id/tv_kalorije"
+            android:layout_height="wrap_content"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            />
+    
+        <TextView
+            android:id="@+id/tv_cena"
+            android:layout_height="wrap_content"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
