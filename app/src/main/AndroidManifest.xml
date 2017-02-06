@@ -13,12 +13,6 @@
         android:theme="@style/Theme.AppCompat.Light">
 
 
-        <!-- Declares 2nd activity -->
-        <activity
-            android:name="rs.aleph.android.example12.activities.SecondActivity"
-            android:label="@string/app_name">
-        </activity>
-
         <!-- Declares 1st (main) activity. Action "MAIN" and category "LAUNCHER" properties
         makes it visible in the application launcher -->
         <activity
