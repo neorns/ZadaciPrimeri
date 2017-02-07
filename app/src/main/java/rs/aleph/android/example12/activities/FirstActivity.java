@@ -55,7 +55,7 @@ public class FirstActivity extends Activity implements ListFragment.OnItemSelect
 
         if (findViewById(R.id.detail_view) != null) {
             landscape = true;
-            getFragmentManager().popBackStack();
+            getFragmentManager().popBackStack(); //ovo mozda ne treba
 
             DetailFragment detailFragment = (DetailFragment) getFragmentManager().findFragmentById(R.id.detail_view);
             if (detailFragment == null) {
@@ -63,6 +63,7 @@ public class FirstActivity extends Activity implements ListFragment.OnItemSelect
                 detailFragment = new DetailFragment();
                 ft.replace(R.id.detail_view, detailFragment, "Detail_Fragment_1");
                 ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+
                 ft.commit();
             }
         }
