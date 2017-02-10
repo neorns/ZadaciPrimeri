@@ -14,4 +14,9 @@
     <string name="open_camera">Open Camera</string>
     <string name="jelo_calories">%.2f calories</string>
     <string name="jelo_price">%.2f RSD</string>
+    <string name="preferences_naziv_restorana">Restaurant name</string>
+    <string name="preferences_adresa_restorana">Restaurant address</string>
+    <string name="preferences_naziv_restorana_sum">Please enter restaurant name</string>
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
 </resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="ime_restorana"
+        android:title="@string/preferences_naziv_restorana"
+        android:summary="@string/preferences_naziv_restorana_sum"
+        />
+    <EditTextPreference
+        android:key="adresa_restorana"
+        android:title="@string/preferences_adresa_restorana"
+        />
+
+</PreferenceScreen>

@@ -14,4 +14,9 @@
     <string name="open_camera">Otvori kameru</string>
     <string name="jelo_calories">%.2f kalorija</string>
     <string name="jelo_price">%.2f RSD</string>
+    <string name="preferences_naziv_restorana">Ime restorana</string>
+    <string name="preferences_adresa_restorana">Adresa restorana</string>
+    <string name="preferences_naziv_restorana_sum">Upišite ime restorana</string>
+    <string name="drawer_open">Otvori fioku</string>
+    <string name="drawer_close">Zatvori fioku</string>
 </resources>
